@@ -1,0 +1,52 @@
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginPage{
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 10%);
+}
+.titleLogin{
+    text-align: center;
+    padding-bottom: 12px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #2af014;
+}
+.user{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.pass{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.inT{
+    all: unset;
+    background-color: hsl(0, 0%, 15%);
+    padding: 4px;
+}
+
+.lgbtn{
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(0, 0%, 35%);
+    padding: 8px;
+}
+
+@media (max-width: 400px){
+    .loginPage{
+    padding: 20px;
+    }
+}

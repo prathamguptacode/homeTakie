@@ -1,0 +1,105 @@
+body{
+    background-color: hsl(0, 0%, 5%);
+    margin: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.nav{
+    background-color: hsl(0, 0%, 10%);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 16px;
+}
+
+.title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.username{
+    margin-left: auto;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 1s ease;
+}
+
+.username:hover{
+    color: #2af014;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+.area{
+    margin: auto;
+    max-width: 1100px;
+    height: calc(100vh - 80px);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.messageArea{
+    height: calc(100% - 90px);
+    padding: 16px;
+    overflow: auto;
+}
+
+.inmessageArea{
+    padding: 16px;
+    background-color: hsl(0, 0%, 10%);
+    display: flex;
+    gap: 12px;
+}
+
+.inmessage{
+    all: unset;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: white;
+    flex: 1;
+    cursor: pointer;
+}
+
+.sendbtn{
+    all: unset;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px 16px;
+    transition: all 0.5s ease;
+}
+
+.sendbtn:hover{
+    color: #2af014;
+}
+
+.bubble{
+    color: #2af014;
+    width: fit-content;
+    margin: 12px 0;
+    
+}
+.inbubble{
+    margin: 12px 0;
+    margin-left: auto;
+    width: fit-content;
+    color: #2af014;
+}
+
+@media (max-width: 600px){
+    .username{
+        display: none;
+    }
+    .menu{
+        margin-left: auto;
+    }
+}
